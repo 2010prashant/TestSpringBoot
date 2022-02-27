@@ -4,16 +4,21 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/test")
 public class MyController {
 
-    /**
-     * Getting the gate's agents Detail
-     * @return ResponseEntity<PaginationDTO<GateGridDTO>>: gate grid data with pagination`
-     */
-    @GetMapping("/first")
+    @GetMapping("/")
     public String test() {
-        return "Hello";
+        return "Hello TEST";
+    }
+
+    @GetMapping("/user")
+    public String user() {
+        return "Hello USER";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return "Hello ADMIN";
     }
 
 
